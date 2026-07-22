@@ -1,10 +1,25 @@
 # Mobile Game Behaviour Monetization Analysis
 
-1. Business Context
+## Project Overview 
 
-A mobile game publisher is preparing the launch of several new titles throughout 2025 and wants to better understand player engagement and monetization patterns across its existing player base. The available dataset covers player activity from January to mid-August 2025.
+This data analysis project explores player behaviour and monetization patterns in a mobile gaming environment using Python, Pandas, Matplotlib and NumPy
 
-The objective of this analysis is to identify behavioural and spending patterns across different player segments, generating insights that can support future engagement and in-app purchase strategy decisions.
+## Business Problem 
+
+A mobile game publisher is preparing the launch of several new titles throughout 2026 and wants to better understand player engagement and spending behaviour across its existing player base. The dataset covers player activity from January to mid-August 2025.
+
+The objective of this analysis is to identify behavioural and spending patterns across different player segments, generating insights that can support future engagement and in-app purchase strategies.
+
+## Analytical Approach
+
+The analysis followed a structured data analysis workflow:
+
+Data Validation & Cleaning → Exploratory Data Analysis → Feature Engineering → Player Segmentation → Data Visualization → Business Insights
+
+The workflow focused on understanding player behaviour and monetization patterns through data cleaning, exploratory analysis, feature engineering, behavioural segmentation, and visual storytelling.
+
+
+
 
 2. Dataset Understanding
 - **Rows:** 3,024 player records -
