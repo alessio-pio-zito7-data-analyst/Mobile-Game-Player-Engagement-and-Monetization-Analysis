@@ -1,0 +1,61 @@
+Mobile Game Dataset Documentation.
+
+
+## Overview
+
+This dataset simulates the business environment of a mobile game publisher and provides player-level data used to analyse engagement and monetization behaviour.
+
+It contains information related to:
+
+- Player demographics
+- Device type
+- Session activity
+- Average session duration
+- In-app purchase behaviour
+- Revenue generation
+- Purchase timing metrics
+
+
+## Dataset Structure 
+
+| Column | Data Type | Description |
+|----------|-----------|-------------|
+| UserID | String | Unique identifier assigned to each player. |
+| Age | Integer | Player's age. |
+| Gender | String | Player's gender. |
+| Country | String | Player's country of residence. |
+| Device | String | Mobile operating system used by the player (Android or iOS). |
+| GameGenre | String | Primary game genre played by the user. |
+| SessionCount | Integer | Total number of gameplay sessions recorded for the player during the observation period. |
+| AverageSessionLength | Float | Average duration of a gameplay session (minutes). |
+| SpendingSegment | String | Player spending category (Whale, Dolphin or Minnow). |
+| InAppPurchaseAmount | Float | Total amount spent on in-app purchases during the observation period. |
+| FirstPurchaseDaysAfterInstall | Integer | Number of days between game installation and the player's first in-app purchase. Null indicate players who never made an in-app purchase. 
+| PaymentMethod | String | Payment method used for the most recent in-app purchase. |
+| LastPurchaseDate | Date | Date of the player's most recent in-app purchase. NaN values indicate players with no purchase history. |
+
+
+## Summary
+
+- **Rows:** 3,024 player records
+- **Columns:** 13
+- **Granularity:** One record per player
+- **Observation Period:** January 2025 – August 2025
+- **Data Model:** Single-table analytical dataset
+
+
+## Dataset Limitations
+
+This dataset has several limitations that should be considered during the analysis:
+
+- One record represents one player.
+- Individual gameplay sessions are not available.
+- Individual purchase transactions are not available.
+- Installation timestamps are not included.
+- Purchase-related fields contain missing values because not all players make in-app purchases.
+
+
+## Data Quality Notes
+
+The dataset contains missing values in purchase-related fields.
+These missing values are expected and represent players who never completed an in-app purchase rather than data collection errors.
