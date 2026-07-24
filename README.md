@@ -12,6 +12,27 @@ A mobile game publisher is preparing the launch of several new titles throughout
 
 The objective of this analysis is to identify engagement and spending patterns across different player segments, generating insights that can support future engagement and in-app purchase strategies.
 
+## Dataset Understanding
+[Complete Dataset Documentation written by me](Dataset/Mobile_Game_Dataset_Documentation.txt) 
+
+- **Rows:** 3,024 player records -
+- **Columns:** 13 -
+- **Granularity:** One record per player
+- **Observation Period:** January 2025 – August 2025
+- **Data Model:** Single-table analytical dataset
+
+## Dataset Limitations
+
+This dataset has several limitations that should be considered during the analysis:
+
+- One record represents one player.
+- Individual gameplay sessions are not available.
+- Individual purchase transactions are not available.
+- Installation timestamps are not included.
+- Purchase-related fields contain missing values because not all players make in-app purchases.
+- The dataset does not include information about marketing campaigns, promotional events, pricing strategies, or A/B testing activities.
+- The dataset provides a snapshot of player metrics rather than a complete behavioural history, limiting temporal and causal analysis.
+
 ## Analytical Approach
 
 The analysis followed a structured data analysis workflow:
@@ -38,8 +59,8 @@ Each notebook represents a different stage of the analysis, from data validation
 
 - Several game genres generate above-average in-app purchase revenue despite only average engagement levels, suggesting differences in monetization effectiveness.
 
-## Matplotlib Scatterplot Preview
-Further visualizations are available in **EDA** and **Visualization_Complete** notebooks.
+## Exploratory Analysis Preview
+The following scatterplot summarizes one of the main findings of the analysis, highlighting the relationship between player engagement and in-app purchase amount. Additional visualizations are available in the EDA and Visualization_Complete notebooks.
 
 ![Dashboard Preview](Visualization_Screenshot/Engagement_Score_vs_In_App_Purchase_Amount.png)
 
@@ -51,24 +72,18 @@ Future analysis should include the payment funnel to identify potential friction
 
 Furthermore, information about marketing campaigns, pricing strategies, promotional offers, and user acquisition efforts by country and game genre would provide additional context and help explain the observed spending differences.
 
-Based on the available dataset, above findings should be considered as hypotheses rather than definitive conclusions. Further data would be required to validate these assumptions and develop more robust business recommendations.
+Based on the available dataset, the above key findings should be considered as hypotheses rather than definitive conclusions. Further data would be required to validate these assumptions and develop more robust business recommendations.
 
-## Dataset Understanding
-[Complete Dataset Documentation written by me](Dataset/Mobile_Game_Dataset_Documentation.txt) 
-
-- **Rows:** 3,024 player records -
-- **Columns:** 13 -
-- **Granularity:** One record per player
-- **Observation Period:** January 2025 – August 2025
-- **Data Model:** Single-table analytical dataset
-
-## Supporting Notebooks and Visualization 
+## Project Notebooks
+The project is organized into three notebooks that document the complete analytical workflow.
 
 # 1) [Data Validation & Cleaning](Data%20Validation%20&%20Cleaning.ipynb) 
 
 # 2) [EDA](EDA.ipynb) 
 
 # 3) [Visualization Complete](Visualization_Complete.ipynb) 
+
+This project was developed as part of my Data Analytics portfolio to demonstrate an end-to-end analytical workflow using Python, Pandas, NumPy and Matplotlib.
 
 --- 
 
