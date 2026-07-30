@@ -49,7 +49,7 @@ Each notebook represents a different stage of the analysis, from data validation
 
 ## Key Findings
 
-- Player spending is left-skewed, with most players making relatively small in-app purchases while a limited number of players spend substantially more.
+- Player spending is highly right-skewed, with most players making relatively small in-app purchases while a limited number of players spend substantially more.
 
 - High player engagement does not necessarily translate into higher in-app spending, suggesting that monetization is influenced by additional behavioural factors.
 
