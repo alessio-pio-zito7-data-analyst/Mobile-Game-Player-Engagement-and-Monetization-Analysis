@@ -4,13 +4,15 @@
 
 This data analysis project explores player engagement and monetization patterns in a mobile gaming environment using Python, Pandas, Matplotlib, and NumPy.
 
-The analysis assumes the current date is **mid-August 2025**, providing insights based on player activity recorded from the beginning of the year up to that point.
+The analysis assumes the current date is mid-August 2025, providing insights based on player activity recorded from the beginning of the year up to that point.
 
 ## Business Problem
 
-A mobile game publisher is preparing the launch of several new titles throughout **2026** and wants to better understand player engagement and spending patterns across its existing player base, with a particular focus on differences between game genres. The dataset covers player activity from **January to mid-August 2025**.
+A mobile game publisher is planning to launch several new titles throughout 2026 and wants to identify promising game genres by understanding player engagement and spending patterns across different genres and countries. The available dataset covers player activity from January to mid-August 2025.
 
-The objective of this analysis is to identify engagement and spending patterns across different player segments, generating insights that can support future engagement and in-app purchase strategies.
+A key question is whether higher player engagement actually translates into higher in-app purchase revenue. Relying on engagement alone could lead to misleading assumptions when evaluating the commercial potential of different game genres.
+
+The objective of this analysis is to investigate the relationship between player engagement and monetisation, identify spending patterns across player segments, genres and countries, and develop data-driven recommendations to support future game release and monetisation strategies.
 
 ## Dataset Understanding
 [Complete Dataset Documentation written by me](Dataset/Mobile_Game_Dataset_Documentation.txt) 
